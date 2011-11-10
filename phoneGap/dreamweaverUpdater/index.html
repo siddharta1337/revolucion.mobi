@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+ 
+
     <title>
-     curso TCI
+  	Curso TCI
     </title>
+
   </head>
 
   <body>
 
 <form id="myForm">
-<fieldset>
-  <legend>Enviando multiples archivos</legend>
 
-      <label>subir uno o varios archivos:</label>
+  <h1>Validando formularios</h1>
 
-       <input type="file" name="multipleFileUpload" multiple />
+      <label for="name" class="required">Nombre</label>
+      <input id="name" name="name" type="text" placeholder="Escriba su nombre" required
 
-      <br />
 
-</fieldset>
+/><br/>
+      <label for="email" class="required">Correo</label>
+      <input id="email" name="email" type="email" placeholder="Escriba su correo" required
+
+
+/><br/>
+
+      <label for="blog">Blog</label>
+      <input id="blog" name="blog" type="url" placeholder="Escriba el URL de su blog"/><br/>
+
+      <p>
+       <input type="submit" value="revisar y enviar"/>
+      </p>
+
+ 
 </form>
 
 </body>
